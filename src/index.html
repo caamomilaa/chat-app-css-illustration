@@ -2,23 +2,68 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <!-- PON UN FAVICON!!! -->
+    <link rel="shortcut icon" href="./assets/images/favicon-32x32.png" type="image/x-icon">
     <link rel="icon" type="image/svg+xml" href="" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- CAMBIA EL TITLE!!! -->
-    <title>Vite Template</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <title>chat-app-css-illustration</title>
   </head>
   <body>
-    <div class="card">
-      <h1 class="card__title">Título</h1>
-      <p class="card__text">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut quis
-        mollitia sequi, quae voluptatem, eligendi, nam repudiandae cupiditate ad
-        consequatur natus omnis ducimus pariatur excepturi in magni voluptas
-        repellat quasi?
-      </p>
-      <a class="card__button" href="">boton</a>
-    </div>
+    <main class="main">
+      <div class="mobile">
+        <section class="mobile__header">
+          <div class="mobile__profile">
+            <img class="mobile__arrow" src="./assets/images/arrow.svg" alt="arrow">
+            <img class="mobile__avatar" src="./assets/images/avatar.jpg" alt="avatar">
+            <div class="mobile__text">
+              <p class="text text--bold">Samuel Green</p>
+              <p class="text text--lightpurple">Available to Walk</p>
+            </div>
+          </div>
+          <img src="./assets/images/menu.svg" alt="" class="mobile__menu">
+        </section>
+        <section class="mobile__main">
+          <div class="chat chat--purple">
+            <p class="text text--purple">That sounds great. I’d be happy to discuss more.</p>
+          </div>
+              <div class="chat chat--purple">
+            <p class="text text--purple">Could you send over some pictures of your dog, please?</p>
+          </div>
+          <div class="chat chat--images">
+            <img class="chat__dog" src="./assets/images/dog-image-1.jpg" alt="">
+            <img class="chat__dog" src="./assets/images/dog-image-2.jpg" alt="">
+            <img class="chat__dog" src="./assets/images/dog-image-3.jpg" alt="">
+          </div>
+          <div class="chat chat--white">
+            <p class="text text--grey">Here are a few pictures. She’s a happy girl!</p>
+          </div>
+          <div class="chat chat--white">
+            <p class="text text--grey">Can you make it?</p>
+          </div>
+          <div class="chat chat--purple">
+            <p class="text text--purple">She looks so happy! The time we discussed works. How long shall I take her out for?</p>
+          </div>    
+          <div class="chat chat--gradient">
+            <p class="text text--white">30 minute walk</p>
+            <span class="text--price">$29</span>
+          </div> 
+          <div class="chat chat--gradient">
+            <p class="text text--white">1 hour walk</p>
+            <span class="text--price">$49</span>
+          </div> 
+          <div class="mobile__type">
+            <p class="text text--lightgrey">Type a message…</p>
+            <img class="mobile__button" src="./assets/images/arrow.svg" alt="">
+          </div>
+        </section>
+      </div>
+      <div class="container">
+        <h1 class="title">Simple booking</h1>
+        <p class="text text--main">Stay in touch with our dog walkers thsrough the chat interface. This makes it easy to discuss arrangements and make bookings. Once the walk has been completed you can rate your walker and book again all through the chat.</p>
+      </div>
+    </main>
     <script type="module" src="./js/index.js"></script>
   </body>
 </html>

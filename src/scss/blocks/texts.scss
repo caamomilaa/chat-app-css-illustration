@@ -1,1 +1,39 @@
-
+.text{
+   font-weight: 400;
+   margin: 0;
+   &--bold{
+        font-weight: 500;
+        font-size: 0.6875rem;
+        color: white;
+   }
+   &--lightpurple{
+    font-size: 0.5rem;
+    color: #D99EFF;
+   }
+   &--purple{
+    font-size: 0.5rem;
+    color: #9341C8;
+   }
+   &--grey{
+    font-size: 0.5rem;
+    color: #6E5D7E;
+   }
+   &--white{
+    font-size: 0.5rem;
+    color: white;
+   }
+   &--price{
+    font-weight: 700;
+    font-size: 0.75rem;
+    color: white;
+    }
+    &--lightgrey{
+        font-size: 0.5625rem;
+        color: #C5C9CC;
+    }
+    &--main{
+       font-size: 1rem;
+       line-height: 28px; 
+       color: #A39DA9;
+    }
+}

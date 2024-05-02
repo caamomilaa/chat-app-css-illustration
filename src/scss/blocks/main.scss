@@ -1,0 +1,48 @@
+@use '../mixins/responsive.scss' as *;
+.main{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 64px;
+    align-items: center;
+    text-align: center;
+    padding: 64px 32px 64px 32px;
+    @include responsive (laptop){
+        flex-direction: row;
+        gap: 125px;
+        padding: 148px 260px 147px 363px;
+        text-align: left;
+        height: 800px;
+    }
+  
+    &::before{
+        position: absolute;
+        content: '';
+        border-radius: 255px;
+        width: 510px;
+        height: 1018px;
+        background-color: #f3f3f38f;
+        top: 40%;
+        left: 20%;
+        z-index: -1;
+        @include responsive (laptop){
+            top: 30%;
+            left: 77%;
+        }
+    }
+    &::after{
+        position: absolute;
+        content: '';
+        border-radius: 255px;
+        width: 510px;
+        height: 1018px;
+        background-image: linear-gradient(#E844FF, #8739FF);
+        top: -47%;
+        left: -80%;
+        z-index: -1;
+        @include responsive (laptop){
+            top: -30%;
+            left: -7%;
+        }
+    }
+}

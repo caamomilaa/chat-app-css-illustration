@@ -1,0 +1,111 @@
+.mobile{
+    text-align: left;
+    position: relative;
+    width: 247px;
+    border-radius: 30px;
+    border: 11px solid white;
+    &::after{
+        position: absolute;
+        content: '';
+        width: 129px;
+        height: 29px;
+        border-radius: 0 0 14px 14px;
+        background-color: white;
+        top: -2%;
+        left:25%;
+    }
+
+    &__header{
+        display: flex;
+        border-radius: 20px 20px 6px 6px;
+        padding: 30px 16.5px 12px 15.5px;
+        background-image: linear-gradient(-130deg, #E844FF , #8739FF);
+        justify-content: space-between;
+        
+    }
+    &__profile{
+        display: flex;
+        gap: 8px;
+    }
+    &__avatar{
+        width: 24px;
+        height: 24px;
+        border-radius: 100%;
+        border: 1px solid white;
+    }
+    &__text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__main{
+        border-radius: 0 0 20px 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        padding: 11px 7.5px 10px 7.5px;
+        background-color: #F5F3F7;
+    }
+
+    &__type{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 5px 5px 19.42px;
+        border-radius: 16.95px;
+        background-color: white;
+    }
+    &__button{
+        rotate: 180deg;
+        width: 25px;
+        height: 25px;
+        background-color: #3E2753;
+        padding: 7px;
+        border-radius: 100%;
+    }
+}
+.chat{
+    padding: 6px 8px 6px 8px;
+    width: 128px;
+    &--purple{
+        background-color: #EEE5F4;
+        border-radius: 10px 10px 10px 4px;
+    }
+    &--white{
+        margin-left: auto;
+        background-color: white;
+        border-radius: 10px 10px 4px 10px;
+    }
+    &--gradient{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 11px 16px 10px 28px;
+        background-image: linear-gradient(25deg, #E844FF, #8739FF);
+        border-radius: 10px 10px 10px 4px;
+        width: 160px;
+        &::after{
+            position: absolute;
+            content: '';
+            width: 12px;
+            height: 12px;
+            border-radius: 100%;
+            border: 1px solid #D8D8D8;
+            top: 32%;
+            left: 5%;
+        }
+    }
+
+    &--images{
+        display: flex;
+        gap: 8px;
+        margin-left: 65px;
+    }
+    &__dog{
+        width: 40px;
+        height: 40px;
+        border-radius: 10px;
+    }
+}
